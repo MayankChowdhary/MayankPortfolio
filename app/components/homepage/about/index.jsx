@@ -21,7 +21,7 @@ function AboutSection() {
             Roles & Responsibilities
           </p>
           <div className="text-gray-200 text-sm lg:text-lg scrollbox">
-            <ReactTyped
+            <ReactTyped  
               strings={[personalData.roles]}
               typeSpeed={50}
               loop={false}
