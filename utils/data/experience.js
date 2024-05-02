@@ -20,7 +20,7 @@ export const experiences = [
   {
     id: 4,
     title: "Mobile POS App developer",
-    company: "Aquem Lanka private limited",
-    duration: "March 2021 - Aug 2021 (6 months)"
+    company: "Aquem Lanka Private Limited",
+    duration: "March 2021 - Aug 2021 (Internship 6 months)"
   }
 ]
