@@ -39,6 +39,7 @@ function ContactForm() {
     const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
 
     try {
+      input.message = input.email+'\n' +input.name+'\n'+input.message;
       const res = await emailjs.send(serviceID, templateID, input, options);
 
       if (res.status === 200) {
