@@ -6,5 +6,10 @@ module.exports = {
   },
   images: {
     domains: ['res.cloudinary.com', 'media.dev.to']
-  }
+  },
+  webpack: (config) => {
+      config.resolve.alias.canvas = false;
+    
+       return config;
+     },
 }

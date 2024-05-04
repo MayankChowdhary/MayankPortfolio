@@ -15,7 +15,7 @@ export const projectsData = [
     },
     {
         id: 2,
-        name: 'IField Map Indoor and Outdoor Positioning',
+        name: 'IField Indoor and Outdoor Positioning',
         description: 'In this Project I experienced Advanced Japanese Technology. Ifield Indoor and Outdoor positioning app is used to track the real time location and activity of the workers inside factories and construction site. Users can also create reports, send messages, see timeline, can do check-in, checkout etc. Worked with Google Map integration. Worked with BLE Beacon devices.',
         tools: ['Kotlin', 'MVVM', 'Dagger', 'Data binding', 'Koin DI', 'Retrofit', 'Leak Canary', 'Google Map Library', 'Geofence Service', 'Activity recognition Service'],
         role: 'Smartphone App Engineer',
