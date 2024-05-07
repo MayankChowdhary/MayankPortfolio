@@ -9,10 +9,11 @@ export const personalData = {
   phone: '+917870356980',
   address: 'Bangalore',
   github: 'https://github.com/MayankChowdhary?tab=repositories',
+  playStore: 'https://play.google.com/store/apps/dev?id=6678975072765891553',
   facebook: '',
   linkedIn: 'https://www.linkedin.com/in/mayank-kumar-962653126/',
   twitter: '',
-  stackOverflow: '',
+  stackOverflow: 'https://stackoverflow.com/users/10016761/mayank-choudhary',
   leetcode: "",
   devUsername: "said7388",
   resume: "https://drive.google.com/file/d/1kCAVdiv9U52IqAxhxbqvbr0xsBDOjuv3/view?usp=sharing"

@@ -1,5 +1,7 @@
 // @flow strict
 
+"use client";
+import 'react-tooltip/dist/react-tooltip.css'
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +10,14 @@ import { FaFacebook, FaTwitterSquare } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
+import * as Anim from "react-awesome-reveal";
+import { Bounce } from "react-toastify";
+import playstoreIc from '/public/svg/workspace/play_store.svg';
+import githubIc from '/public/svg/workspace/github.svg';
+import linkedInIc from '/public/svg/workspace/linkedin.svg';
+import { Tooltip } from 'react-tooltip'
+
+
 
 function HeroSection() {
   return (
@@ -31,43 +41,8 @@ function HeroSection() {
             .
           </h1>
 
-          <div className="my-12 flex items-center gap-5">
-            <Link
-              href={personalData.github}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <BsGithub size={30} />
-            </Link>
-            <Link
-              href={personalData.linkedIn}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <BsLinkedin size={30} />
-            </Link>
-            <Link
-              href={personalData.facebook}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <FaFacebook size={30} />
-            </Link>
-            <Link
-              href={personalData.leetcode}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <SiLeetcode size={30} />
-            </Link>
-            <Link
-              href={personalData.twitter}
-              target='_blank'
-              className="transition-all text-pink-500 hover:scale-125 duration-300"
-            >
-              <FaTwitterSquare size={30} />
-            </Link>
-          </div>
+
+          <br />
 
           <div className="flex items-center gap-3">
             <Link href="#contact" className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600">
@@ -83,6 +58,65 @@ function HeroSection() {
               <MdDownload size={16} />
             </Link>
           </div>
+
+          <Anim.Slide>
+          <p className="my-20 font-medium mb-5 text-[#ffffff] text-xl uppercase">
+            Workspace Links
+          </p>
+          </Anim.Slide>
+
+          <div className="flex items-center gap-4">
+
+            <Anim.JackInTheBox>
+           
+              <Link
+              data-tooltip-id="play-tooltip"
+              data-tooltip-content="Play Store Developer Page"
+                href={personalData.playStore}
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+          
+                <Image src={playstoreIc} alt="Play Store"
+                  width={50}
+                  height={50}
+                />
+                 
+              </Link>
+               <Tooltip id="play-tooltip" place="bottom" style={{ backgroundColor: "rgb(105, 255, 190)", color: "#222" }} />
+           
+              <Link
+                href={personalData.github}
+                data-tooltip-id="git-tooltip"
+                data-tooltip-content="Github Repository"
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+
+                <Image src={githubIc} alt="Github Repo"
+                  width={50}
+                  height={50}
+                />
+              </Link>
+              <Tooltip id="git-tooltip" place="bottom" style={{ backgroundColor: "rgb(105, 255, 190)", color: "#222" }}/>
+
+              <Link
+                href={personalData.linkedIn}
+                data-tooltip-id="linkedIn-tooltip"
+                data-tooltip-content="LinkedIn Profile"
+                target='_blank'
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+              >
+                <Image src={linkedInIc} alt="LinkedIn Profile"
+                  width={50}
+                  height={50}
+                />
+              </Link>
+              <Tooltip id="linkedIn-tooltip" place="bottom" style={{ backgroundColor: "rgb(105, 255, 190)", color: "#222" }}/>
+            </Anim.JackInTheBox>
+
+          </div>
+
 
         </div>
         <div className="order-1 lg:order-2 from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37]">
