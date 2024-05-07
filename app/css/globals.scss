@@ -39,8 +39,8 @@ body {
 }
 
 div.scrollbox {
-  height: 200px;
-  max-height: 200px;
+  height: 220px;
+  max-height: 220px;
   overflow-x: hidden;  
   overflow-y: auto; 
   font-family: Consolas;
@@ -78,14 +78,3 @@ div.scrollbox {
 
 .hidden { display:none; }
 
-.slide-in-left {
-  animation: slide-in-left 0.5s ease-in-out;
-}
-@keyframes slide-in-left {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
