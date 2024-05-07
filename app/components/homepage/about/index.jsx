@@ -22,14 +22,14 @@ function AboutSection() {
           </p>
           <div className="text-gray-200 text-sm lg:text-lg scrollbox">
             <ReactTyped  
-              strings={[personalData.roles]}
+              strings={[personalData.roles.substring(165, personalData.roles.length)]}
               typeSpeed={50}
               loop={false}
               backSpeed={20}
               cursorChar=">"
               showCursor={true}
             />
-
+          <p>{personalData.roles.substring(0, 164)}</p>
           </div>
 
         </div>
