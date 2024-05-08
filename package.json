@@ -20,10 +20,12 @@
     "react-dom": "latest",
     "react-fast-marquee": "^1.6.2",
     "react-icons": "^4.11.0",
+    "react-slick": "^0.30.2",
     "react-text-transition": "^3.1.0",
     "react-toastify": "^10.0.4",
     "react-tooltip": "^5.26.4",
-    "react-typed": "^2.0.12"
+    "react-typed": "^2.0.12",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "autoprefixer": "latest",
