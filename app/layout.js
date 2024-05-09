@@ -5,7 +5,6 @@ import 'react-toastify/dist/ReactToastify.css';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
 import './css/globals.scss';
-import './css/card.scss';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
