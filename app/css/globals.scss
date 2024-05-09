@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css?family=PT+Mono');
+
 :root {
   --foreground-rgb: rgb(211, 216, 232);
 }
@@ -43,7 +45,7 @@ div.scrollbox {
   max-height: 220px;
   overflow-x: hidden;  
   overflow-y: auto; 
-  font-family: Consolas;
+  font-family: Consolas , "PT Mono";
   display: flex;
   flex-direction: column-reverse;
 
@@ -100,6 +102,13 @@ div.scrollbox {
   width: 100%;
   height: 80vh;
   border-color: white;
+  text-align: center;
+}
+
+.slide-container h1 {
+  color: #65ff9b;
+  font-family: "PT Mono";
+  font-size: 20px;
 }
 
 .slick-dots li {
@@ -116,7 +125,7 @@ div.scrollbox {
 }
 
 .slick-dots li button:before {
-  margin-top: 5px;
+  margin-top: 30px;
   background-color: transparent;
   border: 1px solid rgb(71, 123, 255);
   border-radius: 50%;

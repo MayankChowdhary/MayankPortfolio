@@ -3,33 +3,40 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image'
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { slidesData } from "@/utils/data/slides-data";
 
-
+const namesDesktop = [
+  'Advanced Media Player','Advanced Media Player','Advanced Media Player', 'Enguru Live English App','Enguru Live English App','Enguru Live English App', 'Ifield Indoor And Outdoor Positioning System','Ifield Indoor And Outdoor Positioning System','Ifield Indoor And Outdoor Positioning System', 'HRMS Flutter App','HRMS Flutter App','HRMS Flutter App','Mobile POS Android App','Mobile POS Android App','Mobile POS Android App'
+]
 function SlideCard() {
+  const [newTitle, setnewTitle] = useState("Advanced Media Player");
 
   var settings = {
     dots: true,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
-    speed: 1000,
+    speed: 2000,
     slidesToShow: 3,
     slidesToScroll: 3,
-    responsive: [{
-      breakpoint: 1100,
-      settings: {
+    beforeChange: (prev, next) => {
+      setnewTitle(namesDesktop[next]);
+    },
+    responsive: [
+      {
+        breakpoint: 1080,
+        settings: {
         autoplaySpeed: 2000,
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 1,
-        centerMode: true,
 
-      }
-    }]
+        }
+    },
+  ]
   };
 
   let slideList = [];
@@ -48,6 +55,8 @@ function SlideCard() {
 
   return (
     <div className="slide-container">
+      <h1 id="slider-title">{newTitle}</h1>
+      <br/> <br/>
       <Slider {...settings}>
         {slideList}
       </Slider>
