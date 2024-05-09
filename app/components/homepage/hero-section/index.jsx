@@ -78,8 +78,8 @@ function HeroSection() {
               >
           
                 <Image src={playstoreIc} alt="Play Store"
-                  width={50}
-                  height={50}
+                  width={44}
+                  height={44}
                 />
                  
               </Link>
@@ -94,8 +94,8 @@ function HeroSection() {
               >
 
                 <Image src={githubIc} alt="Github Repo"
-                  width={50}
-                  height={50}
+                  width={44}
+                  height={44}
                 />
               </Link>
               <Tooltip id="git-tooltip" place="bottom" style={{ backgroundColor: "rgb(105, 255, 190)", color: "#222" }}/>
@@ -108,8 +108,8 @@ function HeroSection() {
                 className="transition-all text-pink-500 hover:scale-125 duration-300"
               >
                 <Image src={linkedInIc} alt="LinkedIn Profile"
-                  width={50}
-                  height={50}
+                  width={44}
+                  height={44}
                 />
               </Link>
               <Tooltip id="linkedIn-tooltip" place="bottom" style={{ backgroundColor: "rgb(105, 255, 190)", color: "#222" }}/>
