@@ -22,6 +22,7 @@ function SlideCard() {
     speed: 2000,
     slidesToShow: 3,
     slidesToScroll: 3,
+    pauseOnHover:false,
     beforeChange: (prev, next) => {
       setnewTitle(namesDesktop[next]);
     },
