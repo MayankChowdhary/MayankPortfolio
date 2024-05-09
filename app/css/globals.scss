@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css?family=PT+Mono');
+@import url('https://fonts.googleapis.com/css?family=Jersey+15');
 
 :root {
   --foreground-rgb: rgb(211, 216, 232);
@@ -12,6 +13,14 @@
   :root {
     --foreground-rgb: 255, 255, 255;
   }
+}
+
+.fencyTitle{
+  font-family: "Jersey 15";
+}
+
+.my-large{
+  font-size: 30px;
 }
 
 body {
@@ -136,4 +145,3 @@ div.scrollbox {
 .slick-dots li.slick-active button:before {
   background-color: rgb(213, 230, 255);
 }
-

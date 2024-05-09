@@ -60,7 +60,7 @@ function HeroSection() {
           </div>
 
           <Anim.Slide>
-          <p className="my-20 font-medium mb-5 text-[#ffffff] text-xl uppercase">
+          <p className="my-20 font-medium mb-5 text-[#ffffff] my-large uppercase fencyTitle">
             Workspace Links
           </p>
           </Anim.Slide>
