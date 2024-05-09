@@ -19,7 +19,7 @@ function SlideCard() {
     slidesToShow: 3,
     slidesToScroll: 3,
     responsive: [{
-      breakpoint: 700,
+      breakpoint: 1100,
       settings: {
         autoplaySpeed: 2000,
         speed: 1000,
