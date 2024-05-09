@@ -6,6 +6,7 @@ import Image from 'next/image'
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { slidesData } from "@/utils/data/slides-data";
+import { ReactTyped } from "react-typed";
 
 const namesDesktop = [
   'Advanced Media Player','Advanced Media Player','Advanced Media Player', 'Enguru Live English App','Enguru Live English App','Enguru Live English App', 'Ifield Indoor And Outdoor Positioning System','Ifield Indoor And Outdoor Positioning System','Ifield Indoor And Outdoor Positioning System', 'HRMS Flutter App','HRMS Flutter App','HRMS Flutter App','Mobile POS Android App','Mobile POS Android App','Mobile POS Android App'
@@ -55,8 +56,15 @@ function SlideCard() {
 
   return (
     <div className="slide-container">
-      <h1 id="slider-title">{newTitle}</h1>
-      <br/> <br/>
+       <ReactTyped className="ReactTyped"  
+              strings={[newTitle]}
+              typeSpeed={10}
+              loop={false}
+              backSpeed={20}
+              cursorChar=">"
+              showCursor={true}
+            />
+            <br/> <br/><br/>
       <Slider {...settings}>
         {slideList}
       </Slider>
