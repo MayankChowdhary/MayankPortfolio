@@ -1,16 +1,21 @@
 // @flow strict
-import { timeConverter } from '@/utils/time-converter';
-import Image from 'next/image';
+import React,  { useState, useEffect  } from 'react';
 import Link from 'next/link';
-import { BsHeartFill } from 'react-icons/bs';
-import { FaCommentAlt } from 'react-icons/fa';
 
 function PdfCard({ certificate }) {
+  const [isMobile, setIsMobile] = useState(0)
+
+  useEffect(() => {
+    window.addEventListener('resize',  setIsMobile(window.innerWidth <= 1080));
+    return () => {
+        window.removeEventListener('resize',  setIsMobile(window.innerWidth <= 1080));
+    }
+}, []);
 
   return (
     <div className="border border-[#1d293a] hover:border-[#464c6a] transition-all duration-500 bg-[#1b203e] rounded-lg relative group"
     >
-      <div className="h-44 lg:h-52 w-auto cursor-pointer overflow-hidden rounded-t-lg">
+      <div className={(isMobile? 'h-[32vh] w-[45vh]' : 'h-[40vh] w-[55vh]') + " cursor-pointer overflow-hidden rounded-t-lg"}>
         
       <embed className='h-full w-full group-hover:scale-110 transition-all duration-300' src= {certificate.file} allow="autoplay"></embed>
       </div>

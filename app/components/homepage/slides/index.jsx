@@ -25,10 +25,10 @@ function Slides() {
         </div>
       </div>
 
-      <div className="">
+      
         { <SlideCard />}
         
-      </div>
+  
     </div>
   );
 };
