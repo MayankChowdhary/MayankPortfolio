@@ -9,8 +9,9 @@ export const skillsData = [
   'CSS',
   'MySQL',
   'Javascript',
-  'Git',
   'Firebase',
+  'Dagger',
+  'MaterialUI'
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.
