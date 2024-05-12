@@ -1,1 +1,1 @@
-export const highlights = ['MR. MAYANK KUMAR', 'MOBILE APP DEVELOPER', '💼 EXPERIENCE 3YRS+', '🤖 PROJECTS 5','🏢 COMPANIES 4', '📍 BANGALORE']
+export const highlights = ['MR. MAYANK KUMAR', 'MOBILE APP DEVELOPER', '📈 EXPERIENCE 3YRS+', '🛰️ PROJECTS 5','🏙️ COMPANIES 4', '📍 BANGALORE']
