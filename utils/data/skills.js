@@ -3,15 +3,18 @@ export const skillsData = [
   'Kotlin',
   'Flutter',
   'Dart',
+  'Bloc-Cubit',
   'Git',
   'Figma',
-  'HTML',
-  'CSS',
-  'MySQL',
-  'Javascript',
   'Firebase',
-  'Dagger',
-  'MaterialUI'
+  'Dagger Hilt',
+  'MaterialUI',
+  'Android Studio',
+  'Jetpack',
+  'Sqlite',
+  'Rx Android',
+  'Compose',
+ 
 ]
 
 // Choose your skills from below. Make sure it's in the same format and spelled correctly.

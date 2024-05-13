@@ -21,6 +21,13 @@ import postgresql from '/public/svg/skills/postgresql.svg';
 import react from '/public/svg/skills/react.svg';
 import swift from '/public/svg/skills/swift.svg';
 import dagger from '/public/png/skills/dagger.png';
+import astudio from '/public/svg/skills/android-studio.svg';
+import jetpack from '/public/png/skills/jetpack.png';
+import sqlite from '/public/png/skills/sqlite.png';
+import rxandroid from '/public/png/skills/rxjava.png';
+import compose from '/public/png/skills/compose.png';
+import bloc from '/public/png/skills/bloc.png';
+
 
 
 export const skillsImage = (skill) => {
@@ -74,8 +81,20 @@ export const skillsImage = (skill) => {
       return figma;
     case 'flutter':
       return flutter;
-    case 'dagger':
-      return dagger;  
+    case 'dagger hilt':
+      return dagger;
+    case 'android studio':
+      return astudio;
+    case 'jetpack':
+      return jetpack;
+    case 'sqlite':
+      return sqlite;
+    case 'rx android':
+      return rxandroid;
+    case 'compose':
+      return compose;
+    case 'bloc-cubit':
+      return bloc;
     default:
       break;
   }
