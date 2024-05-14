@@ -14,6 +14,7 @@ export const skillsData = [
   'Sqlite',
   'Rx Android',
   'Compose',
+  'Animation'
  
 ]
 

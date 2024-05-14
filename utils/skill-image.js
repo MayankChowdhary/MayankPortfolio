@@ -27,6 +27,7 @@ import sqlite from '/public/png/skills/sqlite.png';
 import rxandroid from '/public/png/skills/rxjava.png';
 import compose from '/public/png/skills/compose.png';
 import bloc from '/public/png/skills/bloc.png';
+import anim from '/public/png/skills/animation.gif';
 
 
 
@@ -34,7 +35,7 @@ export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
   switch (skillID) {
     case 'html':
-      return html;
+      return html; 
     case 'css':
       return css;
     case 'angular':
@@ -95,6 +96,8 @@ export const skillsImage = (skill) => {
       return compose;
     case 'bloc-cubit':
       return bloc;
+      case 'animation':
+        return anim;
     default:
       break;
   }
