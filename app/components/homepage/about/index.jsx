@@ -38,7 +38,7 @@ function AboutSection() {
 
           <motion.div
             initial={{ scale: [1.0], filter: 'grayscale(100%)' }}
-            whileInView={{ scale: [1.0, 1.2], filter: 'grayscale(0%)' }}
+            whileInView={{ scale: [1.0, 1.1], filter: 'grayscale(0%)' }}
             transition={{
               scale: { duration: 1, delay: 0.5 },
               filter: { duration: 1, delay: 1.5 }
