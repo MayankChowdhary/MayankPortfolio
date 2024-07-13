@@ -247,3 +247,13 @@ div.scrollbox {
 .skill_min_width {
   min-width: 150px; 
 }
+
+.grayscale {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.no-grayscale {
+  filter: grayscale(0%);
+  transition: filter 0.5s ease;
+}

@@ -1,6 +1,7 @@
 // @flow strict
 "use client";
 
+import { motion , useInView } from "framer-motion";
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import { ReactTyped } from "react-typed";
@@ -21,7 +22,7 @@ function AboutSection() {
             Roles & Responsibilities
           </p>
           <div className="text-gray-200 text-sm lg:text-lg scrollbox">
-            <ReactTyped  
+            <ReactTyped
               strings={[personalData.roles.substring(165, personalData.roles.length)]}
               typeSpeed={50}
               loop={false}
@@ -29,18 +30,27 @@ function AboutSection() {
               cursorChar=">"
               showCursor={true}
             />
-          <p>{personalData.roles.substring(0, 164)}</p>
+            <p>{personalData.roles.substring(0, 164)}</p>
           </div>
 
         </div>
         <div className="flex justify-center order-1 lg:order-2">
-          <Image
-            src={personalData.profile}
-            width={280}
-            height={280}
-            alt="Mayank Kumar"
-            className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
-          />
+
+          <motion.div
+            initial={{ scale: [1.0], filter: 'grayscale(100%)' }}
+            whileInView={{ scale: [1.0, 1.2], filter: 'grayscale(0%)' }}
+            transition={{
+              scale: { duration: 1, delay: 0.5 },
+              filter: { duration: 1, delay: 1.5 }
+            }}>
+            <Image
+              src={personalData.profile}
+              width={280}
+              height={280}
+              alt="Mayank Kumar"
+              className="rounded-lg cursor-pointer">
+            </Image>
+          </motion.div>
         </div>
       </div>
     </div>
