@@ -1,4 +1,11 @@
 export const slidesData = [
+
+    'https://drive.google.com/file/d/19jnG6NOPnD2_TE_XXq6o2jVeP4l-fman/preview',
+    'https://drive.google.com/file/d/1Od2gEJl9aFAuiEMweoFjNB0QLieobHhM/preview',
+    'https://drive.google.com/file/d/1KhU6o9Hspk1KT9WdvVjHTvs_0xV6tNBx/preview',
+
+
+
     'https://raw.githubusercontent.com/MayankChowdhary/SonaPlayer/master/ScreenShots/Nexus%206P-Scrmytfueenshot1.png',
     'https://raw.githubusercontent.com/MayankChowdhary/SonaPlayer/master/ScreenShots/Nexus%205x-Screensjhrhotakdjwoij1.png',
     'https://raw.githubusercontent.com/MayankChowdhary/SonaPlayer/master/ScreenShots/Nexus%206P-Screenshojiguft1.png',
