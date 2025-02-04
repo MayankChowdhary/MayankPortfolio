@@ -7,7 +7,7 @@ export const projectsData = [
     {
         id: 1,
         name: 'Yogifi Smart YogaMat App',
-        description: "This is an IOT android project works with Smart Yoga Mat. Smart Yoga mat is composed of BLE and Pressure sensors. Mobile app gets connected with Smart Yoga Mat and App shows Mat's Heat map visualizer,  yoga pose detection and correction steps. At the end of the Yoga session app shows users' fitness data in a different types of charts. Other features I worked on  like Google Play Subscription,  Zoho chatbot, Firebase Push notifications, Firebase Crashlytics etc. Simultaneously worked with its other apps like Yogifi Android TV app.  Yogifi Pro yoga teacher app, Excerr Flutter game app.",
+        description: "This is an IOT android project works with Smart Yoga Mat. The Smart Yoga mat is composed of BLE and pressure sensors. Mobile app gets connected with Smart Yoga Mat and App displays Mat's Heat map visualizer,  yoga pose detection and correction steps. At the end of the Yoga session app diplays session analytics data in a different types of charts. Other features I worked on  like Google Play Subscription,  Zoho chatbot, Firebase Push notifications, Firebase Crashlytics etc. Simultaneously worked with its other apps like Yogifi Android TV app.  Yogifi Pro yoga teacher app, Excerr Flutter game app.",
         tools: ['BLE IOT', 'Pressure Sensors', 'Kotlin', 'Android TV', 'Google Play Subscription',  'Rx Android BLE', 'MP Android Charts', 'Zoho Chatbot' , 'ExoPlayer with video Caching', 'Jetpack Compose',  'Flutter', 'Flame Game'],
         demo: 'https://play.google.com/store/apps/details?id=com.yogifi.application&pcampaignid=web_share',
         role: 'IOT App Engineer',
