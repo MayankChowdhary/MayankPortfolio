@@ -1,7 +1,7 @@
 export const slidesData = [
 
     
-    'https://drive.google.com/thumbnail?id=19jnG6NOPnD2_TE_XXq6o2jVeP4l-fman&sz=w800',
+    'https://drive.google.com/thumbnail?id=15ktQrFHp4fWyOgQGMDk3AYS0yUYBxh2k&sz=w800',
     'https://drive.google.com/thumbnail?id=1Od2gEJl9aFAuiEMweoFjNB0QLieobHhM&sz=w800',
     'https://drive.google.com/thumbnail?id=1KhU6o9Hspk1KT9WdvVjHTvs_0xV6tNBx&sz=w800',
 
