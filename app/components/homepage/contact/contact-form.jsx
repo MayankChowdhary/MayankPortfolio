@@ -34,9 +34,9 @@ function ContactForm() {
       setError({ ...error, required: false });
     };
 
-    const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-    const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
+    const serviceID = "service_vvpc012";
+    const templateID = "template_z5dyk0r";
+    const options = { publicKey: "GZMvhGjrkpwSmH4v-" };
 
     try {
       input.message = input.email+'\n' +input.name+'\n'+input.message;
